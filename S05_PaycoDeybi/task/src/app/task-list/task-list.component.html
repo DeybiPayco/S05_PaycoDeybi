@@ -1,0 +1,27 @@
+<ul class="task-list">
+  <li *ngFor="let tarea of tareas; trackBy: trackByFn" 
+      class="task-item" 
+      [class.completed]="tarea.completada"
+      [attr.data-task-id]="tarea.id">
+    <div class="task-content">
+      <input 
+        type="checkbox" 
+        [checked]="tarea.completada"
+        (change)="toggleCompletada(tarea.id)"
+        class="task-checkbox">
+      <span class="task-text" [class.completed-text]="tarea.completada">
+        {{ tarea.texto }}
+      </span>
+    </div>
+    <button 
+      class="delete-btn" 
+      (click)="eliminar(tarea.id)"
+      title="Eliminar tarea">
+      🗑️
+    </button>
+  </li>
+</ul>
+
+<div *ngIf="tareas.length === 0" class="empty-state">
+  <p>✨ No hay tareas. ¡Agrega una nueva! ✨</p>
+</div>

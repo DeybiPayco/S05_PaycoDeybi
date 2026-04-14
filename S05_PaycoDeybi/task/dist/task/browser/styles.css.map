@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/styles.css"],
+  "sourcesContent": ["body {\n  font-family: Arial, sans-serif;\n  background: #f4f6f8;\n  margin: 0;\n}"],
+  "mappings": ";AAAA;AACE,eAAa,KAAK,EAAE;AACpB,cAAY;AACZ,UAAQ;AACV;",
+  "names": []
+}

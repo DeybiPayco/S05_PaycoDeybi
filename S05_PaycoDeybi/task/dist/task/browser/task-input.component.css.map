@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/task-input/task-input.component.css"],
+  "sourcesContent": [".input-container {\r\n  display: flex;\r\n  gap: 10px;\r\n  margin-bottom: 20px;\r\n}\r\n\r\ninput {\r\n  flex: 1;\r\n  padding: 12px;\r\n  border: 2px solid #ddd;\r\n  border-radius: 6px;\r\n  font-size: 16px;\r\n}\r\n\r\ninput:focus {\r\n  outline: none;\r\n  border-color: #007bff;\r\n}\r\n\r\nbutton {\r\n  padding: 12px 20px;\r\n  background-color: #007bff;\r\n  color: white;\r\n  border: none;\r\n  border-radius: 6px;\r\n  cursor: pointer;\r\n  font-size: 16px;\r\n  transition: background-color 0.3s;\r\n}\r\n\r\nbutton:hover:not(:disabled) {\r\n  background-color: #0056b3;\r\n}\r\n\r\nbutton:disabled {\r\n  background-color: #ccc;\r\n  cursor: not-allowed;\r\n}"],
+  "mappings": ";AAAA,CAAC;AACC,WAAS;AACT,OAAK;AACL,iBAAe;AACjB;AAEA;AACE,QAAM;AACN,WAAS;AACT,UAAQ,IAAI,MAAM;AAClB,iBAAe;AACf,aAAW;AACb;AAEA,KAAK;AACH,WAAS;AACT,gBAAc;AAChB;AAEA;AACE,WAAS,KAAK;AACd,oBAAkB;AAClB,SAAO;AACP,UAAQ;AACR,iBAAe;AACf,UAAQ;AACR,aAAW;AACX,cAAY,iBAAiB;AAC/B;AAEA,MAAM,MAAM,KAAK;AACf,oBAAkB;AACpB;AAEA,MAAM;AACJ,oBAAkB;AAClB,UAAQ;AACV;",
+  "names": []
+}

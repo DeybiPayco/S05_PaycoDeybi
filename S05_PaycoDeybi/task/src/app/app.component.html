@@ -1,0 +1,18 @@
+<div class="container">
+
+  <h1> 🗒️ Lista Tareas </h1>
+
+  <div class="stats">
+    <p>Total tareas: {{ totalTareas }}</p>
+    <p>Completadas: {{ tareasCompletadas }}</p>
+  </div>
+
+  <app-task-input (tareaAgregada)="agregarTarea($event)"> </app-task-input>
+
+  <app-task-list 
+    [tareas]="tareas"
+    (tareaEliminada)="eliminarTarea($event)"
+    (tareaToggleada)="toggleCompletada($event)"> 
+  </app-task-list>
+  
+</div>

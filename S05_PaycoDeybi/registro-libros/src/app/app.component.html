@@ -1,0 +1,39 @@
+<div class="header">
+  <h1> 📕 Catálogo de Libros</h1>
+  <p>Administra y visualiza tu colección de libros</p>
+</div>
+<div class="contenedor">
+  <div class="layout">
+
+    <!--FORMULARIO-->
+    <div class="formulario">
+      <h2> Agregar Libro</h2>
+      <form (ngSubmit)="agregarLibro()">
+        <label>Titulo</label>
+        <input type="text" [(ngModel)]="libro.titulo" name="titulo">
+        <label> Autor </label>
+        <input type="text" [(ngModel)]="libro.autor" name="autor">
+        <label> Precio </label>
+        <input type="number" [(ngModel)]="libro.precio" name="precio">
+        <label> Imagen (URL) </label>
+        <input type="text" [(ngModel)]="libro.imagen" name="imagen">
+        <button type="submit"> Agregar Libro </button>
+      </form>
+
+      <!--LISTA DE LIBROS-->
+      <div class="lista">
+
+        <h2> Total: {{ libros.length }} </h2>
+        <div class="catalogo">
+          <div class="card" *ngFor="let libro of libros; let i = index">
+            <img [src]="libro.imagen">
+            <div class="info">
+              <h3> {{ libro.titulo }} </h3>
+              <p> {{ libro.autor }} </p>
+              <p> ${{ libro.precio }} </p>
+              <button (click)="eliminarLibro(i)"> Eliminar </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

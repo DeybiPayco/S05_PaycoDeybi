@@ -1,0 +1,14 @@
+<div class="input-container">
+  <input 
+    [(ngModel)]="nuevaTarea" 
+    placeholder="✨ Escribe una nueva tarea..."
+    (keyup.enter)="agregar()"
+    [disabled]="isAdding">
+  <button 
+    (click)="agregar()"
+    [disabled]="!nuevaTarea.trim() || isAdding"
+    [class.loading]="isAdding">
+    <span *ngIf="!isAdding">➕ Agregar</span>
+    <span *ngIf="isAdding">⏳ Agregando...</span>
+  </button>
+</div>
